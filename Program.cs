@@ -25,8 +25,8 @@ namespace ComnetUnitedHealthService
                         q.AddTrigger(opts => opts
                             .ForJob("CsvJob")
                             .WithIdentity("CsvJobTrigger")
-                            .StartNow()
-                            //.WithCronSchedule(cronExpr)
+                            //.StartNow()
+                            .WithCronSchedule(cronExpr)
                             );
                     });
 
